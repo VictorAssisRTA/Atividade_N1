@@ -10,7 +10,7 @@ int ler_processos(const char *nome_arquivo, Processo processos[], int max) {
     
     char linha[256];
     int count = 0;
-    fgets(linha, sizeof(linha), fp); // Pular cabeçalho
+    fgets(linha, sizeof(linha), fp); 
 
     while (fgets(linha, sizeof(linha), fp) && count < max) {
         Processo p;
